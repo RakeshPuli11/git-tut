@@ -1,0 +1,29 @@
+git rm --cached file_name       ->        removes file from staging.
+
+
+git log --oneline        ->        short cut id's for commits.
+
+
+git revert preivious_commit     ->    generates a new REVERT commit which is the copy of "preivious_commit". now we can make changes and commit again.
+					
+				        ex : in 5 th commit deleted a file.
+				   	now want that file again after 6 6th, 7 th, 8 th commit . now 9 th commit will will have that deleted file also because you reverted it.
+					if any error occurs Like ---------> [MERGE CONFLICT]
+						Open the conflicted file (index.html in this case) in your editor. You'll see conflict markers like this:
+						<<<<<<< HEAD
+						// Your current changes
+						=======
+						// Changes from the reverted commit
+						>>>>>>> a42d045
+					remove those and add changes. now --------STAGE----- it and --------COMMIT-------- it, then enter [git revert --continue].
+					a console will open . Go down and type (wq) to quit that console and go back to vs code terminal.
+
+git branch -a              ->      shows all created branches.
+
+git checkout branch_name    ->     switches to that branch and changes made to that branch (branch_name) will not effect master at all.
+
+
+git branch -D branch_name    ->      deletes specific branch . [  -D   "capital D means delete the unmerged branch" ] . This process must be done from master branch only . We have to checkout master before using this command.
+
+git checkout -b New_Branch_Name   ->   this command directly creates and checkouts a new branch.
+
