@@ -30,3 +30,5 @@ git checkout -b New_Branch_Name   ->   this command directly creates and checkou
 git push https://github.com/rambabuXXXXXXX/to.git   BRANCH_NAME    ->    this will push code into github.
 
 Alternate to above one  ^  git remote add [alias]== origin ("your wish name") https://github.com/rambabuXXXXXXX/to.git   ==>  next command ----- git push origin master
+
+git pull origin master   ->     fetches code from remote repo master (web github) and merges it with local master.
