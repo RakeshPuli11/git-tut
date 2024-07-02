@@ -27,3 +27,6 @@ git branch -D branch_name    ->      deletes specific branch . [  -D   "capital 
 
 git checkout -b New_Branch_Name   ->   this command directly creates and checkouts a new branch.
 
+git push https://github.com/rambabuXXXXXXX/to.git   BRANCH_NAME    ->    this will push code into github.
+
+Alternate to above one  ^  git remote add [alias]== origin ("your wish name") https://github.com/rambabuXXXXXXX/to.git   ==>  next command ----- git push origin master
