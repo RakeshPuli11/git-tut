@@ -31,4 +31,9 @@ git push https://github.com/rambabuXXXXXXX/to.git   BRANCH_NAME    ->    this wi
 
 Alternate to above one  ^  git remote add [alias]== origin ("your wish name") https://github.com/rambabuXXXXXXX/to.git   ==>  next command ----- git push origin master
 
-git pull origin master   ->     fetches code from remote repo master (web github) and merges it with local master.
+MERGE{
+		give permissions to other users to do this.
+		git pull origin master   ->     fetches code from remote repo master (web github) and merges it with local master.
+		After this create a new branch and add some code then push to base repo from new branch (local another device).
+		open base repo github account and merge code.
+}
